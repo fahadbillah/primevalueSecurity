@@ -1120,26 +1120,23 @@ EditAreaLoader.prototype = {
 		switch (cmd) {
 			case "EA_init":
 				if (editAreas[id]['settings']["EA_init_callback"].length > 0) {
-					eval(editAreas[id]['settings']["EA_init_callback"] + "('" + id + "');");
 				}
 				break;
 			case "EA_delete":
 				if (editAreas[id]['settings']["EA_delete_callback"].length > 0) {
-					eval(editAreas[id]['settings']["EA_delete_callback"] + "('" + id + "');");
 				}
 				break;
 			case "EA_submit":
 				if (editAreas[id]['settings']["submit_callback"].length > 0) {
-					eval(editAreas[id]['settings']["submit_callback"] + "('" + id + "');");
 				}
 				break;
 		}
 		if (window.frames["frame_" + id] && window.frames["frame_" + id].editArea) {
 			if (fct_param != undefined) {
-				return eval('window.frames["frame_' + id + '"].editArea.' + cmd + '(fct_param);');
+				return true;
 			}
 			else {
-				return eval('window.frames["frame_' + id + '"].editArea.' + cmd + ';');
+				return true;
 			}
 		}
 		return false;

@@ -30,7 +30,6 @@ defined('_JEXEC') or die;
  * TODO (updated 2004/07/14)
  * -------------------------
  * * Make sure the last few function I may have missed
- *   (like eval()) are included for highlighting
  * * Split to several files - php4, php5 etc
  *
  *************************************************************************************

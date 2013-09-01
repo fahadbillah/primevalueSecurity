@@ -52,11 +52,6 @@ class plgContentDirectPHP extends JPlugin {
 			global $errmsg;
 			if ($this->check_php($phpcode)) {
 				ob_start();
-				if ($using_no_editor) {
-					eval($phpcode);
-				} else {
-					eval($this->fix_str2($phpcode));
-				}
 				$output .= ob_get_contents();
 				ob_end_clean();
 			} else {

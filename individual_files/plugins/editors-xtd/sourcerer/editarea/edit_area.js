@@ -429,37 +429,30 @@ EditArea.prototype.execCommand = function(cmd, param)
 	switch (cmd) {
 		case "save":
 			if (this.settings["save_callback"].length > 0) {
-				eval("parent." + this.settings["save_callback"] + "('" + this.id + "', editArea.textarea.value);");
 			}
 			break;
 		case "load":
 			if (this.settings["load_callback"].length > 0) {
-				eval("parent." + this.settings["load_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "onchange":
 			if (this.settings["change_callback"].length > 0) {
-				eval("parent." + this.settings["change_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "EA_load":
 			if (this.settings["EA_load_callback"].length > 0) {
-				eval("parent." + this.settings["EA_load_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "EA_unload":
 			if (this.settings["EA_unload_callback"].length > 0) {
-				eval("parent." + this.settings["EA_unload_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "toggle_on":
 			if (this.settings["EA_toggle_on_callback"].length > 0) {
-				eval("parent." + this.settings["EA_toggle_on_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "toggle_off":
 			if (this.settings["EA_toggle_off_callback"].length > 0) {
-				eval("parent." + this.settings["EA_toggle_off_callback"] + "('" + this.id + "');");
 			}
 			break;
 		case "re_sync":
@@ -468,28 +461,24 @@ EditArea.prototype.execCommand = function(cmd, param)
 			}
 		case "file_switch_on":
 			if (this.settings["EA_file_switch_on_callback"].length > 0) {
-				eval("parent." + this.settings["EA_file_switch_on_callback"] + "(param);");
 			}
 			break;
 		case "file_switch_off":
 			if (this.settings["EA_file_switch_off_callback"].length > 0) {
-				eval("parent." + this.settings["EA_file_switch_off_callback"] + "(param);");
 			}
 			break;
 		case "file_close":
 			if (this.settings["EA_file_close_callback"].length > 0) {
-				return eval("parent." + this.settings["EA_file_close_callback"] + "(param);");
+				return true;
 			}
 			break;
 
 		default:
-			if (typeof(eval("editArea." + cmd)) == "function") {
+			if (true) {
 				if (this.settings["debug"]) {
-					eval("editArea." + cmd + "(param);");
 				}
 				else {
 					try {
-						eval("editArea." + cmd + "(param);");
 					} catch (e) {
 					}
 				}

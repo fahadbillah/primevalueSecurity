@@ -382,7 +382,6 @@ class JSimpleXML extends JObject
 			// Add the child
 
 			// Update the stack
-			//eval('$this->_stack[] = $name.\'[\'.(count($this->' . $parent . '->' . $name . ') - 1).\']\';');
 		}
 	}
 
@@ -426,7 +425,6 @@ class JSimpleXML extends JObject
 		$tag = $this->_getStackLocation();
 
 		// Assign data to it
-		//eval('$this->' . $tag . '->_data .= $data;');
 	}
 }
 
