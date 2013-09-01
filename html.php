@@ -466,7 +466,7 @@ class JDocumentHTML extends JDocument
 
 		$str = 'return ' . implode(' ', $words) . ';';
 
-		return eval($str);
+		return //eval($str);
 	}
 
 	/**

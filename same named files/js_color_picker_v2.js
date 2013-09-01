@@ -114,7 +114,7 @@ function startMoveSlider(e)
 	document.getElementById('slider_handle'+currentSliderIndex).style.left = leftPos+'px';
 	adjustFormValue(currentSliderIndex);
 	if (sliderObjectArray[currentSliderIndex]['onchangeAction']) {
-		eval(sliderObjectArray[currentSliderIndex]['onchangeAction']);
+		//eval(sliderObjectArray[currentSliderIndex]['onchangeAction']);
 	}
 }
 
@@ -581,7 +581,7 @@ function chooseColor()
 	color_picker_form_field.style.backgroundColor = this.getAttribute('rgbColor');
 	color_picker_div.style.display = 'none';
 	if (color_picker_form_action) {
-		eval(color_picker_form_action);
+		//eval(color_picker_form_action);
 	}
 }
 
@@ -601,7 +601,7 @@ function chooseColorSlider()
 	color_picker_form_field.style.backgroundColor = document.getElementById('js_color_picker_color_code').value;
 	color_picker_div.style.display = 'none';
 	if (color_picker_form_action) {
-		eval(color_picker_form_action);
+		//eval(color_picker_form_action);
 	}
 }
 

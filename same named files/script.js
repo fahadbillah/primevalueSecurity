@@ -151,13 +151,13 @@ if (typeof( window['nnScripts'] ) == "undefined") {
 				onSuccess: function(data)
 				{
 					if (succes) {
-						eval(succes + ';');
+						//eval(succes + ';');
 					}
 				},
 				onFailure: function(data)
 				{
 					if (fail) {
-						eval(fail + ';');
+						//eval(fail + ';');
 					}
 				}
 			}).send(query);
