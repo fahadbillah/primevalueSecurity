@@ -148,18 +148,6 @@ if (typeof( window['nnScripts'] ) == "undefined") {
 			var myXHR = new Request({
 				method: 'post',
 				url: url,
-				onSuccess: function(data)
-				{
-					if (succes) {
-						//eval(succes + ';');
-					}
-				},
-				onFailure: function(data)
-				{
-					if (fail) {
-						//eval(fail + ';');
-					}
-				}
 			}).send(query);
 		},
 

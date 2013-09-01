@@ -103,7 +103,6 @@ function getQueryParam( $key, $default = null )
  * use of HTTPRequest to perform server communication functions - data can
  * be encoded into JSON notation for use in a client-side javascript, or
  * decoded from incoming Javascript requests. JSON format is native to
- * Javascript, and can be directly //eval()'ed with no further parsing
  * overhead
  *
  * All strings should be in ASCII or UTF-8 format!

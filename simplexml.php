@@ -380,7 +380,6 @@ class JSimpleXML extends JObject
 			$parent = $this->_getStackLocation();
 
 			// Add the child
-			//eval('$this->' . $parent . '->addChild($name, $attrs, ' . $count . ');');
 
 			// Update the stack
 			//eval('$this->_stack[] = $name.\'[\'.(count($this->' . $parent . '->' . $name . ') - 1).\']\';');

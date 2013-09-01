@@ -35,7 +35,6 @@ class JUpdaterExtension extends JUpdateAdapter
 		array_push($this->_stack, $name);
 		$tag = $this->_getStackLocation();
 		// reset the data
-		//eval('$this->' . $tag . '->_data = "";');
 
 		switch ($name)
 		{
