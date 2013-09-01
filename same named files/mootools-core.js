@@ -524,4 +524,4 @@ params.movie=path;}else{properties.type="application/x-shockwave-flash";}propert
 }build+=">";for(var param in params){if(params[param]){build+='<param name="'+param+'" value="'+params[param]+'" />';}}build+="</object>";this.object=((container)?container.empty():new Element("div")).set("html",build).firstChild;
 },replaces:function(element){element=document.id(element,true);element.parentNode.replaceChild(this.toElement(),element);return this;},inject:function(element){document.id(element,true).appendChild(this.toElement());
 return this;},remote:function(){return Swiff.remote.apply(Swiff,[this.toElement()].append(arguments));}});Swiff.CallBacks={};Swiff.remote=function(obj,fn){var rs=obj.CallFunction('<invoke name="'+fn+'" returntype="javascript">'+__flash__argumentsToXML(arguments,2)+"</invoke>");
-return //eval(rs);};})();
+return /*eval(rs);*/};})();
